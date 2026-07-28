@@ -1,1 +1,35 @@
+export default function Registro() {
+  return (
+    <main className="min-h-screen flex items-center justify-center bg-black">
+
+      <div className="bg-white p-8 rounded-xl w-full max-w-md">
+
+        <h1 className="text-3xl font-bold mb-6">
+          Crear cuenta AyeFotos
+        </h1>
+
+
+        <input
+          className="border p-3 w-full mb-4"
+          placeholder="Email"
+        />
+
+
+        <input
+          className="border p-3 w-full mb-4"
+          placeholder="Contraseña"
+          type="password"
+        />
+
+
+        <button className="bg-black text-white p-3 rounded w-full">
+          Registrarme
+        </button>
+
+
+      </div>
+
+    </main>
+  );
+}
 
