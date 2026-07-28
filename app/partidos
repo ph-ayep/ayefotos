@@ -1,41 +1,46 @@
 export default function Partidos() {
+  const partidos = [
+    {
+      id: 1,
+      equipos: "Equipo A vs Equipo B",
+      fecha: "28/07/2026",
+      fotos: 250,
+    },
+    {
+      id: 2,
+      equipos: "Equipo C vs Equipo D",
+      fecha: "30/07/2026",
+      fotos: 180,
+    },
+  ];
+
   return (
-    <main className="min-h-screen bg-zinc-100 p-10">
+    <main style={{ padding: "40px" }}>
+      <h1>AyeFotos 📸</h1>
 
-      <h1 className="text-4xl font-bold">
-        Partidos disponibles
-      </h1>
+      <h2>Partidos disponibles</h2>
 
-      <div className="mt-8 grid gap-6">
+      {partidos.map((partido) => (
+        <div
+          key={partido.id}
+          style={{
+            border: "1px solid #ddd",
+            padding: "20px",
+            marginTop: "20px",
+            borderRadius: "10px",
+          }}
+        >
+          <h3>{partido.equipos}</h3>
 
-        <div className="rounded-xl bg-white p-6 shadow">
-          <h2 className="text-2xl font-bold">
-            Final Sub 17
-          </h2>
+          <p>Fecha: {partido.fecha}</p>
 
-          <p className="mt-2">
-            250 fotos disponibles
-          </p>
+          <p>Fotos disponibles: {partido.fotos}</p>
 
-          <button className="mt-4 rounded bg-black px-5 py-2 text-white">
+          <button>
             Ver fotos
           </button>
         </div>
-
-
-        <div className="rounded-xl bg-white p-6 shadow">
-          <h2 className="text-2xl font-bold">
-            Liga Juvenil
-          </h2>
-
-          <p className="mt-2">
-            180 fotos disponibles
-          </p>
-
-        </div>
-
-      </div>
-
+      ))}
     </main>
   );
 }
