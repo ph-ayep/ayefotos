@@ -16,14 +16,19 @@ export default function Home() {
           Encontrá las mejores fotos de tus partidos y guardá tus momentos inolvidables.
         </p>
 
-        <div className="mt-8 flex gap-4">
-          <button className="rounded-full bg-white px-8 py-3 text-black">
-            Ver partidos
-          </button>
+        <a
+  href="/partidos"
+  className="rounded-full bg-white px-8 py-3 text-black"
+>
+  Ver partidos
+</a>
 
-          <button className="rounded-full border border-white px-8 py-3">
-            Crear cuenta
-          </button>
+        <a
+  href="/registro"
+  className="rounded-full border border-white px-8 py-3"
+>
+  Crear cuenta
+</a>
         </div>
 
       </section>
