@@ -1,1 +1,44 @@
+export default function Admin() {
+
+  return (
+
+    <main className="min-h-screen bg-black text-white p-10">
+
+      <h1 className="text-4xl font-bold">
+        Panel AyeFotos
+      </h1>
+
+
+      <div className="bg-white text-black p-8 rounded-xl mt-8">
+
+        <h2 className="text-2xl font-bold">
+          Nuevo partido
+        </h2>
+
+
+        <input
+          className="border p-3 w-full mt-4"
+          placeholder="Nombre del partido"
+        />
+
+
+        <input
+          className="border p-3 w-full mt-4"
+          type="file"
+          multiple
+        />
+
+
+        <button className="bg-black text-white p-3 rounded mt-4">
+          Subir fotos
+        </button>
+
+
+      </div>
+
+
+    </main>
+
+  );
+}
 
