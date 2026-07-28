@@ -1,1 +1,46 @@
+export default function Galeria() {
 
+  const fotos = [
+    "Foto partido 1",
+    "Foto partido 2",
+    "Foto partido 3",
+    "Foto partido 4"
+  ];
+
+
+  return (
+
+    <main className="min-h-screen bg-zinc-100 p-10">
+
+      <h1 className="text-4xl font-bold">
+        Galería
+      </h1>
+
+
+      <div className="grid grid-cols-2 gap-6 mt-8">
+
+        {fotos.map((foto) => (
+
+          <div
+            key={foto}
+            className="h-64 bg-gray-400 rounded-xl flex items-center justify-center"
+          >
+
+            <p className="text-xl text-white text-center">
+              {foto}
+              <br />
+              🔒 Marca de agua
+            </p>
+
+
+          </div>
+
+        ))}
+
+      </div>
+
+
+    </main>
+
+  );
+}
